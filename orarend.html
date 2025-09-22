@@ -6,27 +6,56 @@
     <title>Órarend</title>
 
     <style>
-        body{
+        body {
             background-color: aquamarine;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <table>
-<colgroup>
-    <col style="width: 5">
-    <col style="width: 9">
-    <col style="width: 10">
-    <col style="width: 17">
-    <col style="width: 17">
-    <col style="width: 17">
-</colgroup>
-    
-     <tr>
-        <th>Óra</th>
-     </tr>
-
+        <colgroup>
+            <col style="width: 5%">
+            <col style="width: 9%">
+            <col style="width: 10%">
+            <col style="width: 17%">
+            <col style="width: 17%">
+            <col style="width: 17%">
+        </colgroup>
+        
+        <tr>
+            <th>Óra</th>
+            <th>Tantárgy</th>
+            <th>Tanár</th>
+            <th>Terem</th>
+            <th>Osztály</th>
+            <th>Megjegyzés</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Matematika</td>
+            <td>Kovács</td>
+            <td>101</td>
+            <td>10A</td>
+            <td>Félév végi vizsga</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Fizika</td>
+            <td>Nagy</td>
+            <td>102</td>
+            <td>10B</td>
+            <td>Laboratórium</td>
+        </tr>
+        <!-- Additional rows can be added here -->
     </table>
-    
 </body>
 </html>
