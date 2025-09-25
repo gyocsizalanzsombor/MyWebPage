@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- Changed from "hu" to "en" -->
+<html lang="hu">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiger tank</title>
     <meta charset="UTF-8">
    
     <style>
-        .topnav {
-            overflow: hidden;
-            background-color: #333;
-        }
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
 
-        .topnav a {
-            float: left;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:none;
+  font-size: 17px;
+}
 
-        .topnav a:hover {
-            background-color: #ddd;
-            color: rgb(227, 55, 55);
-        }
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(227, 55, 55);
+}
 
-        .topnav a.active {
-            background-color: #04AA6D;
-            color: white;
-        }
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
 
+        
         img {
             width: 400px;
             margin: 60px;
@@ -38,9 +39,9 @@
         }
 
         img:hover {
-            transform: scale(1.3);
+            transform: scale(1.3); /* Corrected scale for uniform scaling */
         }
-
+        
         body {
             background-color: powderblue;
         }
@@ -48,21 +49,22 @@
 </head>
 <body>
 <div class="topnav">
-    <a href="listak.html">LISTÁK</a>
-    <a href="index.html">Kezdőoldal</a>
-    <a href="Rendeles.html">RENDELÉS</a>
-    <a href="keplink.html">KÉP+LINK Feladat</a>
-    <a href="orarend.html">ÓRAREND</a>
+        <a href="listak.html">LISTÁK</a>
+        <a href="index.html">Kezdőoldal</a>
+        <a href="Rendeles.html">RENDELÉS</a>
+        <a href="keplink.html">KÉP+LINK Feladat</a>
+        <a href="orarend.html">ÓRAREND</a>
 </div>
 
-<img id="image" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fregi.kkszki.hu%2Fassets%2Fimages%2Ffokep-mobil.jpg&f=1&nofb=1&ipt=9fd5dacc5ca88f0cd57488f6943ce1bce39f2379c58d111e499c67c3137c1522" alt="Kollázskép" style="display:block;"> <!-- Changed from "none" to "block" -->
-
-<h1>Gyócsi Zalán Zsombor</h1>
-<h3>Bemutatkozás</h3>
-<p>Halmajon lakom 15 éves Kandós diák vagyok Miskolcon. Szabadidőmben videójátékozom, futok és biciklizek vagy zenét hallgatok. Általában a gépemen Counter-Strike 2-vel játszom vagy Battlefieldel játszom.</p>
-
-<p>A tanulmányaimat nézzük meg röviden, a Halmaji Gárdonyi Géza Általános Iskolában fejeztem be az általános iskolát, kitünő tanuló voltam, jelenleg a Miskolci Kandó Kálmán Informatikai Technikum diákja vagyok, szoftverfejlesztő szakirányba szeretnék elmenni. Később szeretnék egyetemre is menni de nincs még elképzelésem arról hogy pontosan hova vagy mire</p>
 <input type="checkbox" id="toggleImage" onclick="document.getElementById('image').style.display = this.checked ? 'block' : 'none';">
 <label for="toggleImage">Kép mutatása</label>
+
+<img id="image" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fregi.kkszki.hu%2Fassets%2Fimages%2Ffokep-mobil.jpg&f=1&nofb=1&ipt=9fd5dacc5ca88f0cd57488f6943ce1bce39f2379c58d111e499c67c3137c1522" alt="Kollázskép" style="display:none;">
+
+    <h1>Gyócsi Zalán Zsombor</h1>
+    <h3>Bemutatkozás</h3>
+    <p>Halmajon lakom 15 éves Kandós diák vagyok Miskolcon. Szabadidőmben videójátékozom, futok és biciklizek vagy zenét hallgatok. Általában a gépemen Counter-Strike 2-vel játszom vagy Battlefieldel játszom.</p>
+
+    <p>A tanulmányaimat nézzük meg röviden, a Halmaji Gárdonyi Géza Általános Iskolában fejeztem be az általános iskolát, kitünő tanuló voltam, jelenleg a Miskolci Kandó Kálmán Informatikai Technikum diákja vagyok, szoftverfejlesztő szakirányba szeretnék elmenni. Később szeretnék egyetemre is menni de nincs még elképzelésem arról hogy pontosan hova vagy mire</p>
 </body>
 </html>
