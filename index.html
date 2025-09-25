@@ -6,6 +6,12 @@
     <meta charset="UTF-8">
    
     <style>
+
+        body { font-family: Arial, sans-serif; }
+        #comments { margin-top: 20px; }
+        .comment { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
+
+
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -45,8 +51,6 @@
 </head>
 <body>
 
-  <input type="checkbox" onclick="document.body.classList.toggle('dark')">
-
   </div>
 <div class="topnav">
         <a href="listak.html">LISTÁK</a>
@@ -67,5 +71,41 @@
 <label for="toggleImage">Kép mutatása</label>
 
 <img id="image" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fregi.kkszki.hu%2Fassets%2Fimages%2Ffokep-mobil.jpg&f=1&nofb=1&ipt=9fd5dacc5ca88f0cd57488f6943ce1bce39f2379c58d111e499c67c3137c1522" alt="Kollázskép" style="display:none;">
+
+<h1>Comment Section</h1>
+<textarea id="commentInput" rows="4" cols="50" placeholder="Write your comment here..."></textarea><br>
+<button id="submitComment">Submit Comment</button>
+
+<div id="comments"></div>
+
+<script>
+    document.getElementById('submitComment').addEventListener('click', function() {
+        const commentInput = document.getElementById('commentInput');
+        const commentText = commentInput.value;
+        if (commentText) {
+            const commentsDiv = document.getElementById('comments');
+            const newComment = document.createElement('div');
+            newComment.classList.add('comment');
+            newComment.textContent = commentText;
+            commentsDiv.appendChild(newComment);
+            commentInput.value = '';
+            saveComments();
+        }
+    });
+
+    function saveComments() {
+        const comments = document.getElementById('comments').innerHTML;
+        localStorage.setItem('comments', comments);
+    }
+
+    function loadComments() {
+        const savedComments = localStorage.getItem('comments');
+        if (savedComments) {
+            document.getElementById('comments').innerHTML = savedComments;
+        }
+    }
+
+    window.onload = loadComments;
+</script>
 </body>
 </html>
