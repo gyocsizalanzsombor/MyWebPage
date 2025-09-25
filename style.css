@@ -4,13 +4,13 @@ body.dark{
 
 .sidenav {
     height: 100%;
-    width: 250px;
+    width: 100px;
     position: fixed;
     top: 0;
     left: 0;
     background-color: #111;
     padding-top: 20px;
-    transition: width 0.3s;}
+    transition: width 1s;}
 
 .sidenav:hover {
     width: 300px;
