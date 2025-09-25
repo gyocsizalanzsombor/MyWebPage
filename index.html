@@ -12,29 +12,30 @@
         .comment { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
 
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration:none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: rgb(227, 55, 55);
-}
-
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .sidenav {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            padding-top: 20px;
+        }
+        .sidenav a {
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidenav a:hover {
+            background-color: #575757;
+        }
 
         
         img {
@@ -47,16 +48,12 @@
         img:hover {
             transform: scale(1.3); /* Corrected scale for uniform scaling */
         }
-
-        body{
-          background-color: azure;
-        }
     </style>
 </head>
 <body>
 
   </div>
-<div class="topnav">
+<div class="sidenav">
         <a href="listak.html">LISTÁK</a>
         <a href="index.html">Kezdőoldal</a>
         <a href="Rendeles.html">RENDELÉS</a>
@@ -76,9 +73,9 @@
 
 <img id="image" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fregi.kkszki.hu%2Fassets%2Fimages%2Ffokep-mobil.jpg&f=1&nofb=1&ipt=9fd5dacc5ca88f0cd57488f6943ce1bce39f2379c58d111e499c67c3137c1522" alt="Kollázskép" style="display:none;">
 
-<h1>Comment szekció</h1>
-<textarea id="commentInput" rows="4" cols="50" placeholder="Írd le milyen ez az oldal..."></textarea><br>
-<button id="közététel">Közzététel</button>
+<h1>Comment Section</h1>
+<textarea id="commentInput" rows="4" cols="50" placeholder="Write your comment here..."></textarea><br>
+<button id="submitComment">Submit Comment</button>
 
 <div id="comments"></div>
 
@@ -110,7 +107,6 @@
     }
 
     window.onload = loadComments;
-
 </script>
 </body>
 </html>
