@@ -1,17 +1,22 @@
-body.dark{
-    background: #111;
+body {
+    font-family: Arial, sans-serif;
+    margin-left: 0; /* Set to 0 initially */
+    padding: 0;
+    background-color: aquamarine;
+    transition: margin-left 0.3s; /* Smooth transition for margin */
 }
 
 .sidenav {
     height: 100%;
-    width: 100px;
+    width: 150px;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -150px; /* Initially hide the sidebar */
     background-color: #111;
     padding-top: 20px;
-    transition: width 1s;}
+    transition: left 0,5s; /* Smooth transition */
+}
 
-.sidenav:hover {
-    width: 300px;
+.show-sidenav {
+    margin-left: 150px; /* Adjust body margin when sidenav is shown */
 }
