@@ -7,16 +7,24 @@ body {
 }
 
 .sidenav {
+    width: 250px;
     height: 100%;
-    width: 150px;
     position: fixed;
-    top: 0;
-    left: -150px; /* Initially hide the sidebar */
+    left: -250px;
+    transition: left 0.3s ease;
     background-color: #111;
-    padding-top: 20px;
-    transition: left 0,5s; /* Smooth transition */
+    color: white;
 }
 
-.show-sidenav {
-    margin-left: 150px; /* Adjust body margin when sidenav is shown */
+.sidenav:hover {
+    left: 0;
+}
+
+.sidenav .text {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.sidenav:hover .text {
+    transform: translateX(0);
 }
