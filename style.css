@@ -1,11 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    margin-left: 0; /* Set to 0 initially */
-    padding: 0;
-    background-color: aquamarine;
-    transition: margin-left 0.3s; /* Smooth transition for margin */
-}
-
 body.dark{
     background: #111;
 }
@@ -22,12 +14,4 @@ body.dark{
 
 .sidenav:hover {
     width: 300px;
-}
- 
-#tanulmany{
-    font-family: 'Times New Roman', Times, serif;
-}
-
-#lakhely{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

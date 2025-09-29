@@ -21,25 +21,28 @@
     #comments { margin-top: 20px; }
     .comment { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
 
-    .sidenav {
-        height: 100%;
-        width: 150px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: #111;
-        padding-top: 20px;
-    }
-    .sidenav a {
-        padding: 30px 30px;
-        text-decoration: none;
-        font-size: 18px;
-        color: white;
-        display: block;
-    }
-    .sidenav a:hover {
-        background-color: #575757;
-    }
+ .sidenav {
+            height: 100%;
+            width: 150px;
+            position: fixed;
+            top: 0;
+            left: -150px; /* Initially hide the sidebar */
+            background-color: #111;
+            padding-top: 20px;
+            transition: left 0.3s; /* Smooth transition */
+        }
+
+        .sidenav a {
+            padding: 30px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            background-color: #575757;
+        }
 
     img {
         width: 400px;
@@ -127,6 +130,15 @@
     }
 
     window.onload = loadComments;
+
+        // Show sidebar on mouse over the left part of the webpage
+    document.addEventListener('mousemove', function(event) {
+        if (event.clientX < 150) { // Adjust the value as needed
+            document.getElementById('sidebar').style.left = '0'; // Show sidebar
+        } else {
+            document.getElementById('sidebar').style.left = '-150px'; // Hide sidebar
+        }
+    });
 </script>
 </body>
 </html>
