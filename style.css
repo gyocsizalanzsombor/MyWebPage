@@ -1,17 +1,18 @@
+
 body.dark{
     background: #111;
 }
 
 .sidenav {
     height: 100%;
-    width: 100px;
+    width: 150px;
     position: fixed;
     top: 0;
     left: 0;
     background-color: #111;
     padding-top: 20px;
-    transition: width 1s;}
+    transition: width 0.75s;}
 
 .sidenav:hover {
-    width: 300px;
+    width: 240px;
 }
