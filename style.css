@@ -20,3 +20,7 @@ body {
 .show-sidenav {
     margin-left: 150px; /* Adjust body margin when sidenav is shown */
 }
+ 
+#tanulmany{
+    font-family: 'Times New Roman', Times, serif;
+}
