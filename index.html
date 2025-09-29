@@ -6,21 +6,37 @@
     <meta charset="UTF-8">
    
     <style>
-
-    .sidenav {
-        position: absolute; /* Ensure the sidebar can be positioned */
-        left: -150px; /* Start hidden */
-        transition: left 0.3s; /* Smooth transition */
-    }
-
-
-
         body {
             font-family: Arial, sans-serif;
-            margin-left: 250px;
+            margin-left: 0; /* Set to 0 initially */
             padding: 0;
             background-color: aquamarine;
+            transition: margin-left 0.3s; /* Smooth transition for margin */
         }
+
+        .sidenav {
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            left: -250px;
+            transition: left 0.3s ease;
+            background-color: #111;
+            color: white;
+        }
+
+        .sidenav:hover {
+            left: 0;
+        }
+
+        .sidenav .text {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .sidenav:hover .text {
+            transform: translateX(0);
+        }
+
         #comments {
             margin-top: 20px;
         }
@@ -103,7 +119,7 @@
         if (event.clientX < 150) { // Adjust the value as needed
             document.getElementById('sidebar').style.left = '0'; // Show sidebar
         } else {
-            document.getElementById('sidebar').style.left = '-150px'; // Hide sidebar
+            document.getElementById('sidebar').style.left = '-250px'; // Hide sidebar
         }
     });
 </script>
