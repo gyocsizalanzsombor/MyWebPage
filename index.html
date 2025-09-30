@@ -96,49 +96,43 @@
 
 <img id="image" src="img/kollazs.jpg" alt="Kollázskép" style="display:none;">
 
-<h1>Comment Szekció</h1>
-<textarea id="commentInput" rows="4" cols="50" placeholder="Ide írd hogy milyen szuper ez az oldal..."></textarea><br>
-<button id="submitComment">Komment közzététele</button>
+<<h1>Comments</h1>
+<form id="commentForm">
+    <textarea id="commentInput" placeholder="Leave a comment..." required></textarea>
+    <button type="submit">Submit</button>
+</form>
 
 <div id="comments"></div>
 
 <script>
-    document.getElementById('submitComment').addEventListener('click', function() {
-        const commentInput = document.getElementById('commentInput');
-        const commentText = commentInput.value;
-        if (commentText) {
-            const commentsDiv = document.getElementById('comments');
-            const newComment = document.createElement('div');
-            newComment.classList.add('comment');
-            newComment.textContent = commentText;
-            commentsDiv.appendChild(newComment);
-            commentInput.value = '';
-            saveComments();
-        }
-    });
+    const commentForm = document.getElementById('commentForm');
+    const commentInput = document.getElementById('commentInput');
+    const commentsDiv = document.getElementById('comments');
 
-    function saveComments() {
-        const comments = document.getElementById('comments').innerHTML;
-        localStorage.setItem('comments', comments);
+    // Load comments from localStorage
+    window.onload = function() {
+        const comments = JSON.parse(localStorage.getItem('comments')) || [];
+        comments.forEach(comment => {
+            displayComment(comment);
+        });
+    };
+
+    commentForm.onsubmit = function(e) {
+        e.preventDefault();
+        const comment = commentInput.value;
+        const comments = JSON.parse(localStorage.getItem('comments')) || [];
+        comments.push(comment);
+        localStorage.setItem('comments', JSON.stringify(comments));
+        displayComment(comment);
+        commentInput.value = '';
+    };
+
+    function displayComment(comment) {
+        const commentDiv = document.createElement('div');
+        commentDiv.classList.add('comment');
+        commentDiv.textContent = comment;
+        commentsDiv.appendChild(commentDiv);
     }
-
-    function loadComments() {
-        const savedComments = localStorage.getItem('comments');
-        if (savedComments) {
-            document.getElementById('comments').innerHTML = savedComments;
-        }
-    }
-
-    window.onload = loadComments;
-
-        // Show sidebar on mouse over the left part of the webpage
-    document.addEventListener('mousemove', function(event) {
-        if (event.clientX < 150) { // Adjust the value as needed
-            document.getElementById('sidebar').style.left = '0'; // Show sidebar
-        } else {
-            document.getElementById('sidebar').style.left = '-150px'; // Hide sidebar
-        }
-    });
 </script>
 </body>
 </html>
