@@ -16,3 +16,8 @@ body.dark{
 .sidenav:hover {
     width: 240px;
 }
+
+#image{
+    width: 250px;
+    height: 240px;
+}
