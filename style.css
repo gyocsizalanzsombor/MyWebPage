@@ -30,3 +30,8 @@ body.dark{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     font-style: oblique;
 }
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: initial;
+}
