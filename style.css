@@ -44,3 +44,10 @@ h1{
 .Elhelyezkedes{
     text-align: center;
 }
+
+body{
+            background-image: url("img/webhatter.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
