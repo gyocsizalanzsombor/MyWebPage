@@ -42,7 +42,7 @@ h1{
 }
 
 .Elhelyezkedes{
-    text-align: left 300px;
+    text-align: left 300px center;
 }
 
 body{
@@ -51,3 +51,4 @@ body{
             background-attachment: fixed;
             background-position: center;
             background-size: cover;
+}
