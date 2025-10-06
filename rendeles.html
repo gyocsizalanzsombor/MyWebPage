@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rendelés</title>
-
     <style>
-    .topnav {
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.topnav {
   overflow: hidden;
   background-color: #333;
 }
@@ -30,9 +33,29 @@
   color: white;
 }
 
+        body {
+            background-color: aquamarine;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
+<div class="topnav">
+        <a href="listak.html">LISTÁK</a>
+        <a href="index.html">Kezdőoldal</a>
+        <a href="rendeles.html">RENDELÉS</a>
+        <a href="keplink.html">KÉP+LINK Feladat</a>
+        <a href="orarend.html">ÓRAREND</a>
+</div>
+
     <link rel="stylesheet" href="style.css">
 
     <h2>Gumin rendelése</h2>
@@ -88,7 +111,7 @@
               <textarea cols="10" rows="5" name="uzenet" id="uzenet" style="width: 278px; height: 87px;"></textarea>
               <br>
               <br>
-              <input type="button" value="Küldés" onclick="alert(Köszönjük a megrendelés reméljük élvezni fog)">
+              <input type="button" value="Küldés" onclick="alert"(Köszönjük a megrendelés reméljük élvezni fog)">
               <button type="reset">Törlés</button>
            
         </fieldset>
