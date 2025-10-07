@@ -53,7 +53,7 @@ body{
     color: antiquewhite;
 }
 
-table{
+table, tr, td{
    border-color: #ffffffce ;
    color: #ffffffce;
    border-radius: 12%;
