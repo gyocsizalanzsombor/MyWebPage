@@ -57,7 +57,7 @@ table, tr, td{
    border-color: #ffffffce ;
    color: #ffffffce;
    border-radius: 12%;
-   border-style: dashed;
+   border-style:solid;
    border-width: 140%;
 
 }
