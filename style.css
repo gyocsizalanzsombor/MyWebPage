@@ -52,3 +52,12 @@ body{
 .Rendeles{
     color: antiquewhite;
 }
+
+table{
+   border-color: #ffffffce ;
+   color: #ffffffce;
+   border-radius: 12%;
+   border-style: dashed;
+   border-width: 140%;
+
+}
