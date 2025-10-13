@@ -23,26 +23,29 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .sidenav {
-            height: 100%;
-            width: 150px;
-            position: fixed;
-            top: 0;
-            left: -150px; /* Initially hide the sidebar */
-            background-color: #111;
-            padding-top: 20px;
-            transition: left 0.3s; /* Smooth transition */
-        }
-        .sidenav a {
-            padding: 30px 30px;
-            text-decoration: none;
-            font-size: 18px;
-            color: white;
-            display: block;
-        }
-        .sidenav a:hover {
-            background-color: #575757;
-        }
+      .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
 
         img {
             display: block;
