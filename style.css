@@ -65,3 +65,19 @@ table, tr, td{
 h2{
     color: #ffffffce;
 }
+
+ol{
+    list-style: upper-roman;
+    color: #ffffffce;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: medium;
+}
+
+ul{
+    list-style-type: circle;
+    color: #ffffffce;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: medium;
+}
