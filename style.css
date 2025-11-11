@@ -103,7 +103,7 @@ ul{
   }
 
 #image{
-    width: 400px;
+    width: 100px;
     margin: 60px;
     border: 5px solid black;
     transition: 1s;
@@ -114,6 +114,16 @@ ul{
 };
 
 #kepdiv{
-    border: solid 1px red;
+max-width: 10px;
+display: block;
+margin-left: 10px;
+margin-right: 10px;
 }
 
+header{
+    background-image: url('/MyFirstWeb/MyWebPage/img/kandó.jpg');
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+    width: 200px;
+    height: 300px;
+}
