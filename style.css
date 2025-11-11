@@ -124,6 +124,17 @@ header{
     background-image: url('/MyFirstWeb/MyWebPage/img/kandó.jpg');
     background-repeat: no-repeat;
 	background-size: 100% 100%;
-    width: 200px;
-    height: 300px;
+    height: 350px;
+}
+footer{
+    background-color: #10283b;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 55px; 
+	height: 60px;
+	padding-top: 20px;
+	margin-bottom: 5px;
+}
+.footerp{
+    text-align: center;
 }
