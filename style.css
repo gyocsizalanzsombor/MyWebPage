@@ -1,140 +1,208 @@
-
 .sidenav {
-    height: 100%;
-    width: 150px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    padding-top: 20px;
-    transition: width 0.75s;}
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  padding-top: 20px;
+  transition: width 0.75s;
+}
 
 .sidenav:hover {
-    width: 240px;
+  width: 240px;
 }
 
-#image{
-    width: 250px;
-    height: 240px;
+#image {
+  width: 250px;
+  height: 240px;
 }
 
-.span{
-    text-align: center;
-    text-align:justify;
+.span {
+  text-align: center;
+  text-align: justify;
 }
 
-.Betutipus{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    font-style: oblique;
+.Betutipus {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: oblique;
 }
 
-h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: initial;
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: initial;
 }
 
-.Szin{
-    color: #ffffffce;
+.Szin {
+  color: #ffffffce;
 }
 
-.Elhelyezkedes{
-    text-align: left 300px center;
+.Elhelyezkedes {
+  text-align: left 300px;
+  text-align: center;
 }
 
-body{
-            background-image: url("img/webhatter.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            background-size: cover;
+body {
+  background-image: url("img/background\ 2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.Rendeles{
-    color: antiquewhite;
+.Rendeles {
+  color: antiquewhite;
 }
 
-table, tr, td{
-   border-color: #ffffffce ;
-   color: #ffffffce;
-   border-radius: 12%;
-   border-style:solid;
-   border-width: 140%;
-
+table,
+tr,
+td {
+  border-color: #ffffffce;
+  color: #ffffffce;
+  border-radius: 12%;
+  border-style: solid;
+  border-width: 140%;
 }
 
-h2{
-    color: #ffffffce;
+h2 {
+  color: #ffffffce;
 }
 
-ol{
-    list-style: upper-roman;
-    color: #ffffffce;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: medium;
+ol {
+  list-style: upper-roman;
+  color: #ffffffce;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: medium;
 }
 
-ul{
-    list-style-type: circle;
-    color: #ffffffce;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: medium;
+ul {
+  list-style-type: circle;
+  color: #ffffffce;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: medium;
 }
 
-#erdekesseg{
-    width:250px;
-    float:right;
-    margin: 0px 0px 20px 15px;
-    background-color: darkcyan;
-    -ms-transform: rotate(5deg);
-    -webkit-transform: rotate(5deg);
-    transform: rotate(5deg)
+#erdekesseg {
+  width: 250px;
+  float: right;
+  margin: 0px 0px 20px 15px;
+  background-color: darkcyan;
+  -ms-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
 }
 
-.keret{
-    margin: 15px auto;
-    text-align: center;
-    padding: 15px;
-    font-style: italic;
-    font-size: 75%;
-    background-color:darkcyan;
-    box-shadow: 10px 10px 5px #35312d;
-  }
+.keret {
+  margin: 15px auto;
+  text-align: center;
+  padding: 15px;
+  font-style: italic;
+  font-size: 75%;
+  background-color: darkcyan;
+  box-shadow: 10px 10px 5px #35312d;
+}
 
-#image{
-    width: 100px;
-    margin: 60px;
-    border: 5px solid black;
-    transition: 1s;
-    border-radius: 10px;
+#image {
+  width: 100px;
+  margin: 60px;
+  border: 5px solid black;
+  transition: 1s;
+  border-radius: 10px;
 }
 #image:hover {
-    transform: scale(1.3); /* Corrected scale for uniform scaling */
-};
-
-#kepdiv{
-max-width: 10px;
-display: block;
-margin-left: 10px;
-margin-right: 10px;
+  transform: scale(1.3); /* Corrected scale for uniform scaling */
 }
 
-header{
-    background-image: url('/MyFirstWeb/MyWebPage/img/kandó.jpg');
-    background-repeat: no-repeat;
-	background-size: 100% 100%;
-    height: 350px;
+#kepdiv {
+  max-width: 10px;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-footer{
-    background-color: #10283b;
-	background-repeat: no-repeat;
-	background-position: right center;
-	background-size: 55px; 
-	height: 60px;
-	padding-top: 20px;
-	margin-bottom: 5px;
+
+header {
+  background-image: url(img/kandó.jpg) ;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 350px;
+text-align: center;
 }
-.footerp{
-    text-align: center;
+footer {
+  background-color: #10283b;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 55px;
+  height: 60px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+.footerp {
+  text-align: center;
+  font-size: large;
+}
+/* Megnyitott oldalnak a tponavjának színváltozása*/
+#Mainpage {
+  background-color: deeppink;
+}
+#Keplink {
+  background-color: deeppink;
+}
+#Listak {
+  background-color: deeppink;
+}
+#Orarend {
+  background-color: deeppink;
+}
+#Rendeles {
+  background-color: deeppink;
+}
+#evszakok{
+    background-color: deeppink;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  width: 100%;
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+#Sidenavcurrent {
+    width: 30px;
+    height: 30px;
 }

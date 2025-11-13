@@ -1,122 +1,148 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rendelés</title>
     <style>
-table, th, td {
-  border: 1px solid black;
-  border-radius: 10px;
-}
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
 
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
+      .topnav a.active {
+        background-color: #04aa6d;
+        color: white;
+      }
 
-        body {
-            background-color: aquamarine;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-        }
+      body {
+        background-color: aquamarine;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+      }
     </style>
-</head>
-<body>
-  <span id="Rendeles" class="Rendeles">
-<div class="topnav">
+  </head>
+  <body>
+    <span id="Rendeles" class="Rendeles">
+      <div class="topnav">
+        <a href="index.html">KEZDŐLAP</a>
+        <a href="evszakok.html">ÉVSZAKOK</a>
+        <a href="keplink.html">KÉPLINK</a>
         <a href="listak.html">LISTÁK</a>
-        <a href="index.html">Kezdőoldal</a>
-        <a href="rendeles.html">RENDELÉS</a>
-        <a href="keplink.html">KÉP+LINK Feladat</a>
         <a href="orarend.html">ÓRAREND</a>
-</div>
+        <a href="rendeles.html" id="Rendeles">RENDELÉS</a>
+      </div>
 
-    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="style.css" />
 
-    <h2>Guminő rendelése</h2>
+      <h2>Guminő rendelése</h2>
 
-    <form>
+      <form>
         <fieldset>
-           <legend>Személyes adatok</legend>
-            <label for="nev">Név:</label>
-             <input type="text" name="nev" id="nev" placeholder="Lakatos Emanuel Armandó Boss" required>
-       <br>
-       <br>
-            <label for="telefonszam">telefonszám:</label>
-             <input type="text" name="tel" id="tel" placeholder="+3669676967">
-       <br>
-       <br>
-            <label for="lakcim">Lakcím</label>
-             <input type="text" name="lakcim" id="lakcim" placeholder="Esküszöm hogy nem doxollak le :)">
-       <br>
-       <br>
-             <label for="email">Email cím:</label>
-              <input type="email" name="email" id="email" placeholder="nevergonnagiveyouup@gmail.com">
+          <legend>Személyes adatok</legend>
+          <label for="nev">Név:</label>
+          <input
+            type="text"
+            name="nev"
+            id="nev"
+            placeholder="Lakatos Emanuel Armandó Boss"
+            required
+          />
+          <br />
+          <br />
+          <label for="telefonszam">telefonszám:</label>
+          <input type="text" name="tel" id="tel" placeholder="+3669676967" />
+          <br />
+          <br />
+          <label for="lakcim">Lakcím</label>
+          <input
+            type="text"
+            name="lakcim"
+            id="lakcim"
+            placeholder="Esküszöm hogy nem doxollak le :)"
+          />
+          <br />
+          <br />
+          <label for="email">Email cím:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="nevergonnagiveyouup@gmail.com"
+          />
         </fieldset>
- 
+
         <fieldset>
-            <legend>Rendelés adatai</legend>
-             <input type= "radio" name="meret" id="kicsi">
-              <label for="kicsi">12cm</label>
-             <input type= "radio" name="meret" id="medium">
-              <label for="medium">18cm</label>
-             <input type="radio" name="meret" id="nagy">
-              <label for="nagy">24cm</label>
-              <br>
-              <br>
-              <label for="feltetek">Feltétek:</label>
-              <input type="checkbox" name="feltet1" id="feltet1">
-              <label for="feltet1">sonka</label>
-              <input type="checkbox" name="feltet2" id="feltet2">
-              <label for="checkbox">kukorica</label>
-              <input type="checkbox" name="feltet3" id="feltet3">
-              <label for="feltet3">szalámi</label>
-              <input type="checkbox" name="feltet4" id="feltet4">
-              <label for="feltet4">ananász</label>
-              <br>
-              <br>
-              <label for="alap">Alap:</label>
-              <select name="alap" id="alap">
-                <option value="alap1">Szilikon gumi</option>
-                <option value="alap2">Fábol készült szivaccsal bélelt</option>
-              </select>
-              <br>
-              <br>
-              <label for="uzenet">Üzenet:</label>
-              <textarea cols="10" rows="5" name="uzenet" id="uzenet" style="width: 278px; height: 87px;"></textarea>
-              <br>
-              <br>
-              <input type="button" value="Küldés" onclick="alert"(Köszönjük a megrendelés reméljük élvezni fog)">
-              <button type="reset">Törlés</button>
-           
+          <legend>Rendelés adatai</legend>
+          <input type="radio" name="meret" id="kicsi" />
+          <label for="kicsi">12cm</label>
+          <input type="radio" name="meret" id="medium" />
+          <label for="medium">18cm</label>
+          <input type="radio" name="meret" id="nagy" />
+          <label for="nagy">24cm</label>
+          <br />
+          <br />
+          <label for="feltetek">Feltétek:</label>
+          <input type="checkbox" name="feltet1" id="feltet1" />
+          <label for="feltet1">sonka</label>
+          <input type="checkbox" name="feltet2" id="feltet2" />
+          <label for="checkbox">kukorica</label>
+          <input type="checkbox" name="feltet3" id="feltet3" />
+          <label for="feltet3">szalámi</label>
+          <input type="checkbox" name="feltet4" id="feltet4" />
+          <label for="feltet4">ananász</label>
+          <br />
+          <br />
+          <label for="alap">Alap:</label>
+          <select name="alap" id="alap">
+            <option value="alap1">Szilikon gumi</option>
+            <option value="alap2">Fábol készült szivaccsal bélelt</option>
+          </select>
+          <br />
+          <br />
+          <label for="uzenet">Üzenet:</label>
+          <textarea
+            cols="10"
+            rows="5"
+            name="uzenet"
+            id="uzenet"
+            style="width: 278px; height: 87px"
+          ></textarea>
+          <br />
+          <br />
+          <input type="button" value="Küldés" onclick="alert"(Köszönjük a
+          megrendelés reméljük élvezni fog)">
+          <button type="reset">Törlés</button>
         </fieldset>
-    </form>
-  </span>
-</body>
+      </form>
+    </span>
+  </body>
 </html>

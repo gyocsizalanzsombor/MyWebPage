@@ -26,12 +26,13 @@
         .sidenav {
             height: 100%;
             width: 150px;
-            position: fixed;
+            position: -150px;;
             top: 0;
-            left: -150px; /* Initially hide the sidebar */
+            left: -300px; /* Initially hide the sidebar */
             background-color: #111;
             padding-top: 20px;
             transition: left 0.3s; /* Smooth transition */
+            text-align: center;
         }
         .sidenav a {
             padding: 30px 30px;
@@ -67,6 +68,9 @@
         float: left;
         margin: 0 15px 15px 0;
       }
+      body{
+        margin-right: 300px;
+      }
     </style>
 
     <link rel="stylesheet" href="style.css">
@@ -74,11 +78,12 @@
 <body>
 
 <div class="sidenav">
-    <a href="listak.html">LISTÁK</a>
-    <a href="index.html">Kezdőoldal</a>
-    <a href="rendeles.html">RENDELÉS</a>
-    <a href="keplink.html">KÉP+LINK Feladat</a>
-    <a href="orarend.html">ÓRAREND</a>
+    <a href="index.html" id="Mainpage">KEZDŐLAP <img src="img/sidenavcurrent.png" alt="sidenavcurrent" id="Sidenavcurrent"></a>
+    <a href="evszakok.html">ÉVSZAKOK</a>
+<a href="keplink.html">KÉPLINK</a>
+<a href="listak.html">LISTÁK</a>
+<a href="orarend.html">ÓRAREND</a>
+<a href="rendeles.html">RENDELÉS</a>
 </div>
 <header></header>
 <div class="keret" id="erdekesseg">tudtad hogy ezt a weboldal AI-mentes és a nagy híres Zalán kecskeember csinálta saját két kezével</div>
@@ -129,10 +134,10 @@
             commentDiv.textContent = comment;
             commentsDiv.appendChild(commentDiv);
         }
+
     </script>
         </section>
 <footer>
     <p class="footerp">bro ez kínszenvedés volt sok szerencsét otthon átnézni hehehe</p>
 </footer>
 </body>
-</html>
