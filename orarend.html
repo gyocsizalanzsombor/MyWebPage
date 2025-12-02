@@ -44,36 +44,41 @@ table, th, td {
         table {
             width: 100%;
             border-collapse: collapse;
+            border-left: solid white;
+            border-right: solid white;
         }
         th, td {
-            width: 100%;
-            border: 1px solid black;
+            border: 1px solid white;
             padding: 8px;
             text-align: center;
+            border-left: white;
+            border-right: white;
+            border-collapse: collapse;
         }
     </style>
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-     <div class="topnav">
-        <a href="index.html">KEZDŐLAP</a>
-        <a href="evszakok.html">ÉVSZAKOK</a>
-<a href="keplink.html">KÉPLINK</a>
-<a href="listak.html">LISTÁK</a>
-<a href="orarend.html" id="Orarend">ÓRAREND</a>
-<a href="rendeles.html">RENDELÉS</a>
+<header id="orarend">
+    <div class="topnav">
+        <a href="listak.html">LISTÁK</a>
+        <a href="index.html">Kezdőoldal</a>
+        <a href="rendeles.html">RENDELÉS</a>
+        <a href="keplink.html">KÉP+LINK Feladat</a>
+        <a href="orarend.html">ÓRAREND</a>
 </div>
-    <table>
+</header>
+<body>
+    <table style="width: 75%;" id="orarend">
         <colgroup>
             <col style="width: 17%">
-            <col style="width: 17%">
-            <col style="width: 17%">
-            <col style="width: 17%">
-            <col style="width: 17%">
-            <col style="width: 17%">
+            <col style="width: 7">
+            <col style="width: 7%">
+            <col style="width: 7%">
+            <col style="width: 7%">
+            <col style="width: 7%">
         </colgroup>
-
+        <span class="Szin">
         <tr>
             <th>Óra</th>
             <th>Hétfő</th>
@@ -145,7 +150,6 @@ table, th, td {
             <td></td>
             <td>Testnevelés</td>        
         </tr>
-        <!-- Additional rows can be added here -->
         </span>
     </table>
 </body>
