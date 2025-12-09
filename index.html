@@ -6,15 +6,25 @@
     <meta charset="UTF-8">
    
     <style>
+        header {
+            background-image: url(img/kandó.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 350px;
+            text-align: center;
+        }
 
         body {
             font-family: Arial, sans-serif;
             margin-left: 260px;
+            margin-right: 300px;
             padding: 0;
         }
+
         #comments {
             margin-top: 20px;
         }
+
         .comment {
             border: 1px solid #ccc;
             padding: 10px;
@@ -23,6 +33,7 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         .sidenav {
             height: 100%;
             width: 150px;
@@ -34,6 +45,7 @@
             transition: left 0.3s; /* Smooth transition */
             text-align: center;
         }
+
         .sidenav a {
             padding: 30px 30px;
             text-decoration: none;
@@ -41,10 +53,11 @@
             color: white;
             display: block;
         }
+
         .sidenav a:hover {
             background-color: #575757;
         }
-      
+
         textarea {
             width: 100%;
             height: 100px;
@@ -53,6 +66,7 @@
             border: 1px solid #ccc;
             padding: 10px;
         }
+
         button {
             background-color: #4CAF50;
             color: white;
@@ -61,16 +75,31 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
         button:hover {
             background-color: #45a049;
         }
-      .image-wrap {
-        float: left;
-        margin: 0 15px 15px 0;
-      }
-      body{
-        margin-right: 300px;
-      }
+
+        .image-wrap {
+            float: left;
+            margin: 0 15px 15px 0;
+        }
+
+        .facebook:hover {
+            transition: scale(1, 3);
+        }
+
+        footer {
+            clear: both;
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        footer img {
+            width: 50px; /* Adjust size as needed */
+            margin: 0 10px;
+        }
     </style>
 
     <link rel="stylesheet" href="style.css">
@@ -81,27 +110,29 @@
     <img src="img/kollazs.jpg" id="kollazsside">
     <a href="index.html" id="Mainpage">KEZDŐLAP <img src="img/sidenavcurrent.png" alt="sidenavcurrent" id="Sidenavcurrent"></a>
     <a href="evszakok.html">ÉVSZAKOK</a>
-<a href="keplink.html">KÉPLINK</a>
-<a href="listak.html">LISTÁK</a>
-<a href="orarend.html">ÓRAREND</a>
-<a href="rendeles.html">RENDELÉS</a>
+    <a href="keplink.html">KÉPLINK</a>
+    <a href="listak.html">LISTÁK</a>
+    <a href="orarend.html">ÓRAREND</a>
+    <a href="rendeles.html">RENDELÉS</a>
 </div>
-<header id></header>
+
+<header></header>
 <div class="keret" id="erdekesseg">tudtad hogy ezt a weboldal AI-mentes és a nagy híres Zalán kecskeember csinálta saját két kezével</div>
-    <h1 style class="Betutipus Szin Elhelyezkedes">Gyócsi Zalán Zsombor</h1></header>
-<section><h3 style class="Szin Elhelyezkedes">Bemutatkozás</h3>
-    <p style class="Szin Elhelyezkedes">Halmajon lakom 15 éves Kandós diák vagyok Miskolcon. Szabadidőmben videójátékozom, futok és biciklizek vagy zenét hallgatok. Általában a gépemen Counter-Strike 2-vel játszom vagy Battlefieldel játszom. Zenét is szoktam hallgatni, kedvenc bandáim/ előadóim a Linkin Park, Skillet, Three days grace. Imádom a rockot, klasszikust is, mint az AC/DC meg hasonlók. Szeretek még új dolgokat tanulni HTML-ben hogy fejlesszem a tudásomat. Imádom a történelmet, középkor és a II. VH a kedvenc korszakom.</p>
+<h1 class="Betutipus Szin Elhelyezkedes">Gyócsi Zalán Zsombor</h1>
+<section>
+    <h3 class="Szin Elhelyezkedes">Bemutatkozás</h3>
+    <p class="Szin Elhelyezkedes">Halmajon lakom 15 éves Kandós diák vagyok Miskolcon. Szabadidőmben videójátékozom, futok és biciklizek vagy zenét hallgatok. Általában a gépemen Counter-Strike 2-vel játszom vagy Battlefieldel játszom. Zenét is szoktam hallgatni, kedvenc bandáim/ előadóim a Linkin Park, Skillet, Three days grace. Imádom a rockot, klasszikust is, mint az AC/DC meg hasonlók. Szeretek még új dolgokat tanulni HTML-ben hogy fejlesszem a tudásomat. Imádom a történelmet, középkor és a II. VH a kedvenc korszakom.</p>
     
-    <p style class="Szin Elhelyezkedes">A tanulmányaimat nézzük meg röviden, a Halmaji Gárdonyi Géza Általános Iskolában fejeztem be az általános iskolát, kitünő tanuló voltam, jelenleg a Miskolci Kandó Kálmán Informatikai Technikum diákja vagyok, szoftverfejlesztő szakirányba szeretnék elmenni. Később szeretnék egyetemre is menni de nincs még elképzelésem arról hogy pontosan hova vagy mire</p>
+    <p class="Szin Elhelyezkedes">A tanulmányaimat nézzük meg röviden, a Halmaji Gárdonyi Géza Általános Iskolában fejeztem be az általános iskolát, kitünő tanuló voltam, jelenleg a Miskolci Kandó Kálmán Informatikai Technikum diákja vagyok, szoftverfejlesztő szakirányba szeretnék elmenni. Később szeretnék egyetemre is menni de nincs még elképzelésem arról hogy pontosan hova vagy mire</p>
     
     <input type="checkbox" id="toggleImage" onclick="document.getElementById('image').style.display = this.checked ? 'block' : 'none';">
-    <label for="toggleImage" style class="Szin Elhelyezkedes">Kép mutatása</label>
+    <label for="toggleImage" class="Szin Elhelyezkedes">Kép mutatása</label>
     <img id="image" src="img/kollazs.jpg" alt="Kollázskép" style="display:none;">
     
-    <h1 style class="Szin Elhelyezkedes">Kommentek</h1>
-    <form id="commentForm" style class="Elhelyezkedes">
-        <textarea id="commentInput" placeholder="Írd le milyen sexy vagyok" required style class="Elhelyezkedes szin"></textarea>
-        <button style class="Elhelyezkedes" type="submit" style class="Elhelyezkedes Szin">Közzététel</button>
+    <h1 class="Szin Elhelyezkedes">Kommentek</h1>
+    <form id="commentForm" class="Elhelyezkedes">
+        <textarea id="commentInput" placeholder="Írd le milyen sexy vagyok" required class="Elhelyezkedes szin"></textarea>
+        <button class="Elhelyezkedes" type="submit">Közzététel</button>
     </form>
     
     <div id="comments"></div>
@@ -135,10 +166,24 @@
             commentDiv.textContent = comment;
             commentsDiv.appendChild(commentDiv);
         }
-
     </script>
-        </section>
+</section>
+
 <footer>
-    <p class="footerp">bro ez kínszenvedés volt sok szerencsét otthon átnézni hehehe</p>
+        <a href="https://www.facebook.com/people/Zal%C3%A1n-Zsombor-Gy%C3%B3csi/pfbid0fTnMJFcdZhWV5sqf3zsnoiRqXa684KTMWwGAchpwJ33vdAKqoRBhB6YFEsB3jrvl/" target="_blank">
+
+        <div style="float: left 200px;"> <img src="img/facebookLogo-removebg-preview.png" class="facebook" alt="Facebook">
+            <p>Facebook profilom</p></div>
+        </a>
+      
+
+ 
+        <a href="https://steamcommunity.com/profiles/76561199867838465" target="_blank">
+<div style="float: right 200px;">
+    <img src="img/steamLogo.png" class="steamimg" alt="Steam fiókom">
+    <p>Steam fiókom</p>
+</div>
+        </a>
 </footer>
 </body>
+</html>
