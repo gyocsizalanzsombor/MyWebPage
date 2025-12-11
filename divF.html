@@ -1,44 +1,181 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DivFeladat</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIV feladat</title>
     <style>
-        body{
-            margin: 0;
-            padding: 0;
-        }
-        div{
-            padding: 15px;
-            margin: 15px;
-        }
-        h1{
-            text-align: center;
-            margin: 20px;
-            color: aliceblue;
-        }
+      body {
+        background-image: url("img/background\ 2.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .topnav a.active {
+        background-color: #04aa6d;
+        color: white;
+      }
+      h1 {
+        text-align: center;
+        margin: 20px;
+      }
+
+      .piros-doboz {
+        background-color: red;
+        width: 1400px;
+        height: 150px;
+        padding: 20px;
+        margin: 10px 40px;
+        color: white;
+      }
+
+      .kek-doboz {
+        background-color: blue;
+        width: 670px;
+        height: 150px;
+        padding: 20px;
+        margin: 10px 10px 10px 40px;
+        color: white;
+        float: left;
+      }
+
+      .zold-doboz {
+        background-color: green;
+        width: 670px;
+        height: 150px;
+        padding: 20px;
+        margin: 10px 40px 10px 10px;
+        color: white;
+        float: left;
+      }
+
+      .vilagoszold-doboz {
+        background-color: greenyellow;
+        border: 1px solid black;
+        width: 310px;
+        height: 70px;
+        padding: 10px;
+        margin-right: 5px;
+        color: black;
+        float: left;
+      }
+
+      h3 {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+
+      .zold-doboz p {
+        text-align: center;
+        margin: 0;
+      }
+
+      .sarga-doboz {
+        background-color: yellow;
+        border: 1px solid black;
+        width: 310px;
+        height: 70px;
+        padding: 10px;
+        color: black;
+        float: left;
+      }
+      .narancssarga-doboz {
+        background-color: orange;
+        color: black;
+        width: 416px;
+        height: 70px;
+        padding: 20px;
+        margin: 10px 10px 10px 40px;
+        float: left;
+      }
+      .lila-doboz {
+        background-color: purple;
+        color: white;
+        width: 416px;
+        height: 70px;
+        padding: 20px;
+        margin: 10px 10px 40px 10px;
+        float: left;
+      }
+      .cyan-doboz {
+        background-color: cyan;
+        color: black;
+        width: 416px;
+        height: 70px;
+        padding: 20px;
+        margin: 10px 10px 40px 40px;
+        float: left;
+      }
+
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <nav>
+      <div class="topnav">
+        <a href="index.html">KEZDŐLAP</a>
+        <a href="evszakok.html" id="evszakok">ÉVSZAKOK</a>
+        <a href="keplink.html">KÉPLINK</a>
+        <a href="listak.html">LISTÁK</a>
+        <a href="orarend.html">ÓRAREND</a>
+        <a href="rendeles.html">RENDELÉS</a>
+      </div>
+    </nav>
     <h1>A DIV elem gyakorlása</h1>
-<div class="pirosdoboz">
-<h2>1.pirosdoboz</h2></div>
 
-<div class="masodiksor">
-   <div class="kekdoboz"> <h2>2.Kékdoboz</h2></div>
-   <div class="zolddoboz">
-    <div class="sarga"><h2>2.2.2</h2></div>
-    <div class="vilagoszold"><h2>2.2.1</h2><p>világoszöld doboz</p></div>
-</div>
+    <div class="piros-doboz">
+      <h2>1. Piros doboz</h2>
+    </div>
 
-   
-</div>
-<div>
-     <div class="sarga2"><h2>sargadoboz 2</h2></div>
-     <div class="lila"><h2>lila doboz</h2></div>
-     <div class="cyan"><h2>Cyan doboz</h2></div>
-</div>
-</body>
+    <div class="masodik-sor">
+      <div class="kek-doboz">
+        <h2>2.1 Kék doboz</h2>
+      </div>
+      <div class="zold-doboz">
+        <h2>2.2 Zöld doboz</h2>
+        <div class="vilagoszold-doboz">
+          <h3>2.2.1</h3>
+          <p>Világoszöld doboz</p>
+        </div>
+        <div class="sarga-doboz">
+          <h3>2.2.2</h3>
+          <p>Sárga doboz</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="harmadik-sor">
+      <div class="narancssarga-doboz">
+        <h3>3.a Narancssárga-doboz</h3>
+        <p>Ez a bal oldali</p>
+      </div>
+      <div class="lila-doboz">
+        <h3>3.b lila doboz</h3>
+        <p>Ez a középső</p>
+      </div>
+      <div class="cyan-doboz">
+        <h3>3.c cyan doboz</h3>
+        <p>Ez a ajobb oldali</p>
+      </div>
+    </div>
+  </body>
 </html>
